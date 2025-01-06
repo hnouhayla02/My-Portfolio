@@ -26,14 +26,14 @@ export default function Home() {
               <ProfileImage />
               
               <AnimatedText
-                text="Jane Doe"
-                className="text-4xl md:text-5xl font-bold mb-4"
+                text="Nouhayla HARCHI"
+                className="text-5xl md:text-7xl font-bold mb-6"
                 delay={0.2}
               />
               
               <AnimatedText
-                text="Full Stack Developer"
-                className="text-5xl md:text-7xl font-bold mb-6"
+                text="Developer"
+                className="text-4xl md:text-6xl font-bold mb-4"
                 delay={0.4}
               />
               
@@ -58,7 +58,7 @@ export default function Home() {
                 className="mt-12"
               >
                 <a
-                  href="#about"
+                  href="/about"
                   className="inline-block px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300"
                 >
                   Learn More

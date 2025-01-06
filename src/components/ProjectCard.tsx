@@ -1,39 +1,35 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import {Project} from '../data/projects'
 import { ExternalLink, Github } from 'lucide-react';
 
+
 interface ProjectCardProps {
-  project: {
-    title: string;
-    description: string;
-    image: string;
-    technologies: string[];
-    github: string;
-    live: string;
-  };
-  index: number;
+    project: Project;  
+    index: number;
+  
 }
 
-export default function ProjectCard({ project, index }: ProjectCardProps) {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div
+      key={project.id}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+      className="p-4 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl hover:bg-gray-700 transition duration-300"
     >
-      <div className="relative h-48 overflow-hidden">
+      <Link to={`/projects/${project.id}`} className="block">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+          className="w-full h-48 object-cover rounded-t-lg"
         />
-      </div>
-      
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-        <p className="text-gray-400 mb-4">{project.description}</p>
-        
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="p-4">
+          <h2 className="text-xl font-semibold text-gray-100 mb-2">{project.title}</h2>
+          <p className="text-gray-400 text-sm">{project.shortDescription}</p>
+          <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, i) => (
             <span
               key={i}
@@ -64,7 +60,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             Live Demo
           </a>
         </div>
-      </div>
+        </div>
+      </Link>
     </motion.div>
   );
-}
+};
+
+export default ProjectCard;

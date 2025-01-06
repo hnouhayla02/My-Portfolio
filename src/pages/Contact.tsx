@@ -42,7 +42,7 @@ export default function Contact() {
                 <MapPin className="text-blue-400 mr-4" size={24} />
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-gray-300">San Francisco, CA</p>
+                  <p className="text-gray-300">Casablanca, MA</p>
                 </div>
               </div>
               
@@ -50,7 +50,7 @@ export default function Contact() {
                 <Mail className="text-blue-400 mr-4" size={24} />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-300">contact@example.com</p>
+                  <p className="text-gray-300">harchi.nouha2002@gmail.com</p>
                 </div>
               </div>
               
@@ -58,7 +58,7 @@ export default function Contact() {
                 <Phone className="text-blue-400 mr-4" size={24} />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-300">+212777939682</p>
                 </div>
               </div>
             </div>
