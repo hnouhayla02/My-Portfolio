@@ -23,7 +23,7 @@ export interface Project {
   // Sample projects data
   export const projects: Project[] = [
     {
-      id: "1",
+      id: "e-commerce platforms",
       title: "E-Commerce Platforms",
       shortDescription: "Full-stack e-commerce platforms.",
       fullDescription: "An end-to-end e-commerce platform with advanced features like payment gateway integration, responsive design, and real-time user analytics.",
@@ -38,7 +38,7 @@ export interface Project {
       live: "https://petparadise.com",
     },
     {
-      id: "2",
+      id: "AutoGo SC",
       title: "AutoGo SC",
       shortDescription: "Website generating QR code for invoices.",
       fullDescription: "This project allows businesses to generate QR codes for their invoices, making it easier for customers to retrieve detailed billing information. It’s efficient and user-friendly.",
@@ -53,7 +53,7 @@ export interface Project {
       live: "https://example.com",
     },
     {
-      id: "3",
+      id: "3D Model Designs",
       title: "3D Model Designs",
       shortDescription: "Interactive 3D products generator tool.",
       fullDescription: "Using Three.js and React, this tool allows users to create and customize 3D product models interactively, perfect for e-commerce or design-focused industries.",
@@ -68,7 +68,7 @@ export interface Project {
       live: "https://example.com",
     },
     {
-      id: "4",
+      id: "SynchHealth",
       title: "SynchHealth",
       shortDescription: "Health tracking app with ML features.",
       fullDescription: "A mobile app that helps users track their steps, water intake, and weight progress. It leverages machine learning for advanced insights and personalized recommendations.",
@@ -83,7 +83,7 @@ export interface Project {
       live: "https://example.com",
     },
     {
-      id: "5",
+      id: "SoulBoost",
       title: "SoulBoost",
       shortDescription: "Therapeutic app with inspiring messages.",
       fullDescription: "A therapeutic application designed to deliver uplifting and inspiring messages to its users. Features include real-time updates and a user-friendly interface.",
@@ -98,7 +98,7 @@ export interface Project {
       live: "https://example.com",
     },
     {
-      id: "6",
+      id: "DGI-Converto",
       title: "DGI-Converto",
       shortDescription: "Excel to XML converter with data analysis.",
       fullDescription: "A web application that converts Excel files to XML format and provides powerful data analysis tools. Ideal for businesses handling large datasets.",

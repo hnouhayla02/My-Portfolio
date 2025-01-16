@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 import ExperienceCard from './ExperienceCard'; // Ensure this is properly defined as an experience card component
 import Akwa_logo from '../akwa_group_logo.png';
 import Compucom_logo from '../compucom_logo.png';
@@ -69,7 +69,7 @@ export default function Experience() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-3xl font-bold flex items-center justify-center mb-12"
       >
-        <GraduationCap className="mr-3" />
+        <Briefcase className="mr-3" />
         Experience
       </motion.h2>
 

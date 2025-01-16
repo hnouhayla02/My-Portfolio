@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Award, FileText } from 'lucide-react';
+import { Calendar, MapPin, FileText, Award } from 'lucide-react';
 
 interface Document {
   name: string;
