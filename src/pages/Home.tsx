@@ -7,7 +7,7 @@ import AnimatedText from '../components/AnimatedText';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-[#060930] to-[#0e1240]">
       <div className="relative h-screen">
         <div className="absolute inset-0">
           <Canvas camera={{ position: [0, 0, 8] }}>
@@ -27,19 +27,19 @@ export default function Home() {
               
               <AnimatedText
                 text="Nouhayla HARCHI"
-                className="text-5xl md:text-7xl font-bold mb-6"
+                className="text-5xl md:text-7xl font-bold mb-6 text-[#FFFFFF]"
                 delay={0.2}
               />
               
               <AnimatedText
-                text="Developer"
-                className="text-4xl md:text-6xl font-bold mb-4"
+                text="Web/App Developer"
+                className="text-xl md:text-4xl font-bold mb-4 text-[#595B83]"
                 delay={0.4}
               />
               
               <AnimatedText
-                text="Crafting digital experiences that combine form and function"
-                className="text-xl md:text-2xl text-gray-300 mb-8"
+                text="Building digital experiences, Byte by Byte"
+                className="text-xl md:text-2xl text-[#F4ABC4]/80 mb-8"
                 delay={0.6}
               />
               
@@ -47,6 +47,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
+                className="text-pink-300"
               >
                 <SocialLinks />
               </motion.div>
@@ -59,7 +60,10 @@ export default function Home() {
               >
                 <a
                   href="/about"
-                  className="inline-block px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300"
+                  className="inline-block px-8 py-3 text-lg font-medium text-[#F4ABC4] 
+                    bg-gradient-to-r from-[#333456] to-[#595B83] hover:from-[#595B83] 
+                    hover:to-[#333456] rounded-full transition-all duration-300 
+                    shadow-lg hover:shadow-[#F4ABC4]/25"
                 >
                   Learn More
                 </a>

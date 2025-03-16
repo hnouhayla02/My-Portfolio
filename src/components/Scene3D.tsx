@@ -25,14 +25,14 @@ export default function Scene3D() {
         args={[1, 32, 32]}
         position={[-2, 0, 0]}
       >
-        <meshStandardMaterial color="#4299e1" wireframe />
+        <meshStandardMaterial color="#ec4899" wireframe /> {/* Pink-500 */}
       </Sphere>
       <Box
         ref={boxRef}
         args={[1.5, 1.5, 1.5]}
         position={[2, 0, 0]}
       >
-        <meshStandardMaterial color="#48bb78" wireframe />
+        <meshStandardMaterial color="#ec4899" wireframe /> {/* Purple-500 */}
       </Box>
     </>
   );

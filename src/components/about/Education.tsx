@@ -18,7 +18,7 @@ const education = [
     documents: [
       {
         name: "Bachelor's Degree Certificate",
-        url: diploma // Replace with actual path when available
+        url: diploma
       }
     ]
   },
@@ -33,7 +33,7 @@ const education = [
     documents: [
       {
         name: "CCNA Certificate",
-        url: certificate // Replace with actual path when available
+        url: certificate
       }
     ]
   }
@@ -51,19 +51,27 @@ export default function Education() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-3xl font-bold flex items-center justify-center mb-12"
+        className="text-3xl font-bold flex items-center justify-center mb-12 text-pink-100"
       >
-        <GraduationCap className="mr-3" />
+        <GraduationCap className="mr-3 text-purple-300" />
         Education
       </motion.h2>
       
       <div className="space-y-8">
         {education.map((edu, index) => (
-          <EducationCard 
-            key={edu.degree} 
-            education={edu} 
-            index={index} 
-          />
+          <motion.div
+            key={edu.degree}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className="bg-pink-100/5 p-6 rounded-xl backdrop-blur-sm shadow-xl 
+              border border-pink-200/10 hover:border-pink-300/20 transition-colors"
+          >
+            <EducationCard 
+              education={edu} 
+              index={index} 
+            />
+          </motion.div>
         ))}
       </div>
     </motion.div>

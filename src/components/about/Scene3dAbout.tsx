@@ -16,13 +16,13 @@ export default function Scene3DAbout() {
   return (
     <group ref={groupRef}>
       <Torus args={[3, 0.2, 16, 100]} position={[0, 0, 0]}>
-        <meshStandardMaterial color="#4299e1" wireframe />
+        <meshStandardMaterial color="#ec4899" wireframe /> {/* Pink-500 */}
       </Torus>
       <Box args={[1, 1, 1]} position={[-2, 0, 0]}>
-        <meshStandardMaterial color="#48bb78" wireframe />
+        <meshStandardMaterial color="#d946ef" wireframe /> {/* Fuchsia-500 */}
       </Box>
       <Sphere args={[0.7, 32, 32]} position={[2, 0, 0]}>
-        <meshStandardMaterial color="#ed64a6" wireframe />
+        <meshStandardMaterial color="#a855f7" wireframe /> {/* Purple-500 */}
       </Sphere>
     </group>
   );

@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import Leetcode from './icons/Leetcode';
 
 const socialLinks = [
   {
@@ -16,6 +17,11 @@ const socialLinks = [
     href: 'mailto:harchi.nouha2002@gmail.com',
     label: 'Email'
   }
+/*{
+    icon: Leetcode,
+    href: 'https://leetcode.com/your-leetcode-username',
+    label: 'LeetCode'
+  }*/
 ];
 
 export default function SocialLinks() {

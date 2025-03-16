@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-
 interface ProjectCardProps {
   project: {
     id: string;
@@ -22,33 +21,37 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+      className="bg-[#0e1240]/5 rounded-lg overflow-hidden transform hover:scale-105 
+        transition-transform duration-300 border border-[#0e1240]/10 
+        hover:border-[#0e1240]/20 backdrop-blur-sm shadow-xl"
     >
       <Link to={`/projects/${project.id}`} className="block">
         <div className="relative h-48 overflow-hidden">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+            className="w-full h-full object-cover transform hover:scale-110 
+              transition-transform duration-500"
           />
         </div>
         
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-          <p className="text-gray-400 mb-4">{project.shortDescription}</p>
+          <h3 className="text-xl font-bold mb-2 text-[#0e1240]">{project.title}</h3>
+          <p className="text-[#0e1240]/80 mb-4">{project.shortDescription}</p>
           
           <div className="flex flex-wrap gap-2 mb-4">
             {project.technologies.map((tech, i) => (
               <span
                 key={i}
-                className="px-3 py-1 bg-gray-700 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300"
+                className="px-3 py-1 bg-[#0e1240]/10 text-[#0e1240] rounded-full text-sm 
+                  hover:bg-[#0e1240]/20 transition-colors duration-300"
               >
                 {tech}
               </span>
             ))}
           </div>
           
-          <div className="flex items-center text-blue-400 hover:text-blue-300 transition-colors">
+          <div className="flex items-center text-[#0e1240] hover:text-[#0e1240] transition-colors">
             View Details
             <ArrowRight size={20} className="ml-2" />
           </div>
@@ -60,7 +63,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
+          className="flex items-center text-[#0e1240] hover:text-[#0e1240] 
+            transition-colors duration-300"
           onClick={(e) => e.stopPropagation()}
         >
           <Github size={20} className="mr-1" />
@@ -70,7 +74,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center text-gray-300 hover:text-white transition-colors duration-300"
+          className="flex items-center text-[#0e1240] hover:text-[#0e1240] 
+            transition-colors duration-300"
           onClick={(e) => e.stopPropagation()}
         >
           <ExternalLink size={20} className="mr-1" />

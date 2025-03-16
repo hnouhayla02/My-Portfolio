@@ -23,7 +23,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 bg-gradient-to-b from-[#060930] to-[#0e1240]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,42 +32,44 @@ export default function Contact() {
           className="grid grid-cols-1 md:grid-cols-2 gap-12"
         >
           <div>
-            <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
-            <p className="text-gray-300 mb-8">
+            <h2 className="text-4xl font-bold mb-8 text-[#F4ABC4]">Get in Touch</h2>
+            <p className="text-[#595B83] mb-8">
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
             </p>
             
             <div className="space-y-6">
               <div className="flex items-center">
-                <MapPin className="text-blue-400 mr-4" size={24} />
+                <MapPin className="text-purple-300 mr-4" size={24} />
                 <div>
-                  <h3 className="font-semibold">Location</h3>
-                  <p className="text-gray-300">Casablanca, MA</p>
+                  <h3 className="font-semibold text-pink-200">Location</h3>
+                  <p className="text-pink-200/80">Casablanca, MA</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <Mail className="text-blue-400 mr-4" size={24} />
+                <Mail className="text-purple-300 mr-4" size={24} />
                 <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-300">harchi.nouha2002@gmail.com</p>
+                  <h3 className="font-semibold text-pink-200">Email</h3>
+                  <p className="text-pink-200/80">harchi.nouha2002@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <Phone className="text-blue-400 mr-4" size={24} />
+                <Phone className="text-purple-300 mr-4" size={24} />
                 <div>
-                  <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-300">+212777939682</p>
+                  <h3 className="font-semibold text-pink-200">Phone</h3>
+                  <p className="text-pink-200/80">+212 7 77 93 96 82</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-gray-800 p-8 rounded-lg">
+
+          <div className="bg-[#333456]/5 p-8 rounded-xl backdrop-blur-sm shadow-xl 
+            border border-[#595B83]/10 hover:border-[#F4ABC4]/20 transition-colors">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label htmlFor="name" className="block text-sm font-medium mb-2 text-pink-200">
                   Name
                 </label>
                 <input
@@ -76,13 +78,15 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400"
+                  className="w-full px-4 py-2 bg-[#333456]/5 border border-[#595B83]/20 rounded-lg 
+                    focus:outline-none focus:border-[#F4ABC4]/50 text-[#F4ABC4] placeholder-[#595B83]/50
+                    transition-colors"
                   required
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label htmlFor="email" className="block text-sm font-medium mb-2 text-pink-200">
                   Email
                 </label>
                 <input
@@ -91,13 +95,15 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400"
+                  className="w-full px-4 py-2 bg-[#333456]/5 border border-[#595B83]/20 rounded-lg 
+                    focus:outline-none focus:border-[#F4ABC4]/50 text-[#F4ABC4] placeholder-[#595B83]/50
+                    transition-colors"
                   required
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label htmlFor="message" className="block text-sm font-medium mb-2 text-pink-200">
                   Message
                 </label>
                 <textarea
@@ -106,14 +112,18 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400"
+                  className="w-full px-4 py-2 bg-[#333456]/5 border border-[#595B83]/20 rounded-lg 
+                    focus:outline-none focus:border-[#F4ABC4]/50 text-[#F4ABC4] placeholder-[#595B83]/50
+                    transition-colors"
                   required
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full flex items-center justify-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors"
+                className="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-r 
+                  from-[#333456] to-[#595B83] hover:from-[#595B83] hover:to-[#333456] rounded-lg 
+                  transition-all duration-300 shadow-lg hover:shadow-[#F4ABC4]/25 text-[#F4ABC4]"
               >
                 <Send size={20} className="mr-2" />
                 Send Message

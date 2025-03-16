@@ -67,23 +67,30 @@ export default function Experience() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-3xl font-bold flex items-center justify-center mb-12"
+        className="text-3xl font-bold flex items-center justify-center mb-12 text-pink-100"
       >
-        <Briefcase className="mr-3" />
+        <Briefcase className="mr-3 text-purple-300" />
         Experience
       </motion.h2>
 
-      <div className="space-y-8">
+      <div className="space-y-12">
         {experienceData.map((exp, index) => (
-          <ExperienceCard 
-            key={exp.role} // Using `role` as the unique key
-            experience={exp} // Pass experience prop to ExperienceCard
-            index={index}
-          />
+          <motion.div
+            key={exp.role}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className="bg-pink-100/5 rounded-xl p-8 backdrop-blur-sm shadow-xl 
+              border border-pink-200/10 hover:border-pink-300/20 transition-colors"
+          >
+            <ExperienceCard 
+              experience={exp}
+              index={index}
+            />
+          </motion.div>
         ))}
       </div>
     </motion.div>
   );
 }
 
-  
