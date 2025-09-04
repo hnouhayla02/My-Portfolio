@@ -51,9 +51,9 @@ export default function Education() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-3xl font-bold flex items-center justify-center mb-12 text-pink-100"
+        className="text-3xl font-bold flex items-center justify-center mb-12 text-[#DDA853]"
       >
-        <GraduationCap className="mr-3 text-purple-300" />
+        <GraduationCap className="mr-3 text-[#A6CDC6]" />
         Education
       </motion.h2>
       
@@ -64,8 +64,8 @@ export default function Education() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="bg-pink-100/5 p-6 rounded-xl backdrop-blur-sm shadow-xl 
-              border border-pink-200/10 hover:border-pink-300/20 transition-colors"
+            className="bg-[#FBF5DD]/5 p-6 rounded-xl backdrop-blur-sm shadow-xl 
+              border border-[#DDA853]/20 hover:border-[#DDA853]/40 transition-colors"
           >
             <EducationCard 
               education={edu} 

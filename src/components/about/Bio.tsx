@@ -4,11 +4,11 @@ import { User } from 'lucide-react';
 export default function Bio() {
   return (
     <div className="space-y-6">
-      <h2 className="text-3xl font-bold flex items-center justify-center mb-8 text-pink-100">
-        <User className="mr-3 text-purple-300" />
+      <h2 className="text-3xl font-bold flex items-center justify-center mb-8 text-[#DDA853]">
+        <User className="mr-3 text-[#A6CDC6]" />
         About Me
       </h2>
-      <div className="text-lg text-pink-200/80 space-y-4 max-w-3xl mx-auto">
+      <div className="text-lg text-[#FBF5DD]/80 space-y-4 max-w-3xl mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,21 +37,21 @@ export default function Bio() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-pink-100/5 p-4 rounded-lg border border-pink-200/10 
-              hover:border-pink-300/20 transition-colors backdrop-blur-sm"
+            className="bg-[#FBF5DD]/5 p-4 rounded-lg border border-[#DDA853]/20 
+              hover:border-[#DDA853]/40 transition-colors backdrop-blur-sm"
           >
-            <h3 className="font-semibold text-purple-200">Location</h3>
-            <p className="text-pink-200/80">Morocco</p>
+            <h3 className="font-semibold text-[#A6CDC6]">Location</h3>
+            <p className="text-[#FBF5DD]/80">Morocco</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="bg-pink-100/5 p-4 rounded-lg border border-pink-200/10 
-              hover:border-pink-300/20 transition-colors backdrop-blur-sm"
+            className="bg-[#FBF5DD]/5 p-4 rounded-lg border border-[#DDA853]/20 
+              hover:border-[#DDA853]/40 transition-colors backdrop-blur-sm"
           >
-            <h3 className="font-semibold text-purple-200">Experience</h3>
-            <p className="text-pink-200/80">2 Years</p>
+            <h3 className="font-semibold text-[#A6CDC6]">Experience</h3>
+            <p className="text-[#FBF5DD]/80">2 Years</p>
           </motion.div>
         </div>
       </div>

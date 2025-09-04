@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import ProfilePicture from '../components/pdp.jpg';
+import ProfilePicture from '../components/coverL.jpg';
 
 export default function ProfileImage() {
   return (
@@ -13,7 +13,7 @@ export default function ProfileImage() {
       <img
         src={ProfilePicture}
         alt="Nouhayla"
-       className="w-full h-full object-cover rounded-full border-4 border-[#F4ABC4]"
+       className="w-full h-full object-cover rounded-full border-4 border-[#964B00]"
       />
     </motion.div>
   );

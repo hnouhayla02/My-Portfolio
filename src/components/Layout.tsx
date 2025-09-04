@@ -15,13 +15,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#060930] to-[#333456] text-[#F4ABC4]">
-      <nav className="fixed w-full z-50 backdrop-blur-md bg-[#060930]/90 border-b border-[#595B83]/50">
+    <div className="min-h-screen bg-gradient-to-b from-[#16404D] to-[#A6CDC6] text-[#FBF5DD]">
+      <nav className="fixed w-full z-50 backdrop-blur-md bg-[#16404D]/90 border-b border-[#DDA853]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link 
               to="/" 
-              className="text-xl font-semibold tracking-wider"
+              className="text-xl font-semibold tracking-wider text-[#DDA853]"
             >
               Portfolio
             </Link>
@@ -33,10 +33,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`flex items-center gap-2 px-4 py-2 transition-all duration-300
+                    className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300
                       ${location.pathname === item.path
-                        ? 'bg-[#333456]/50 text-[#F4ABC4]'
-                        : 'text-[#595B83] hover:bg-[#333456]/30 hover:text-[#F4ABC4]'
+                        ? 'bg-[#DDA853]/20 text-[#DDA853] border border-[#DDA853]/40'
+                        : 'text-[#FBF5DD]/80 hover:bg-[#A6CDC6]/20 hover:text-[#DDA853]'
                       }`}
                   >
                     <Icon size={16} className="opacity-75" />
@@ -49,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-[#595B83] hover:text-[#F4ABC4] transition-colors"
+                className="text-[#FBF5DD]/80 hover:text-[#DDA853] transition-colors"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -64,18 +64,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             exit={{ opacity: 0, y: -10 }}
             className="md:hidden"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-[#060930]/95 backdrop-blur-md 
-              border-b border-[#595B83]/50">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-[#16404D]/95 backdrop-blur-md 
+              border-b border-[#DDA853]/30">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`flex items-center gap-2 px-4 py-3 transition-all duration-300
+                    className={`flex items-center gap-2 px-4 py-3 rounded-lg transition-all duration-300
                       ${location.pathname === item.path
-                        ? 'bg-[#333456]/50 text-[#F4ABC4]'
-                        : 'text-[#595B83] hover:bg-[#333456]/30 hover:text-[#F4ABC4]'
+                        ? 'bg-[#DDA853]/20 text-[#DDA853] border border-[#DDA853]/40'
+                        : 'text-[#FBF5DD]/80 hover:bg-[#A6CDC6]/20 hover:text-[#DDA853]'
                       }`}
                     onClick={() => setIsMenuOpen(false)}
                   >

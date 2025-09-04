@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
-import ExperienceCard from './ExperienceCard'; // Ensure this is properly defined as an experience card component
+import ExperienceCard from './ExperienceCard';
 import Akwa_logo from '../akwa_group_logo.png';
 import Compucom_logo from '../compucom_logo.png';
 import internship1 from '../ATTESTATION NOHA.pdf';
+import intership2 from '../attestation_compucom.pdf';
 
 
 const experienceData = [
@@ -17,7 +18,7 @@ const experienceData = [
       'Successfully integrated third-party applications into the Odoo system.',
       'Optimized the workflow automation for inventory management.',
     ],
-    logo: Akwa_logo, // Logo URL
+    logo: Akwa_logo,
     documents: [
       { name: 'Certificate', url: internship1 },
     ],
@@ -31,7 +32,7 @@ const experienceData = [
     achievements: [
       'Developed a customer portal that improved user engagement and facilitates usage.'
     ],
-    logo: Akwa_logo, // Logo URL
+    logo: Akwa_logo,
     documents: [
       { name: 'Certificate', url: '' },
     ],
@@ -46,11 +47,10 @@ const experienceData = [
       'Conducted vulnerability scans and identified critical security risks.',
       'Implemented a Web Application Firewall (WAF) to enhance application security.',
     ],
-    logo: Compucom_logo, // Logo URL
-
+    logo: Compucom_logo,
     documents: [
       { name: 'WAF Config Project', url: '' },
-      { name: 'Certificate', url: '' },
+      { name: 'Certificate', url: intership2 },
     ],
   },
 ];
@@ -67,9 +67,9 @@ export default function Experience() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-3xl font-bold flex items-center justify-center mb-12 text-pink-100"
+        className="text-3xl font-bold flex items-center justify-center mb-12 text-[#DDA853]"
       >
-        <Briefcase className="mr-3 text-purple-300" />
+        <Briefcase className="mr-3 text-[#A6CDC6]" />
         Experience
       </motion.h2>
 
@@ -80,8 +80,8 @@ export default function Experience() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="bg-pink-100/5 rounded-xl p-8 backdrop-blur-sm shadow-xl 
-              border border-pink-200/10 hover:border-pink-300/20 transition-colors"
+            className="bg-[#FBF5DD]/5 rounded-xl p-8 backdrop-blur-sm shadow-xl 
+              border border-[#DDA853]/20 hover:border-[#DDA853]/40 transition-colors"
           >
             <ExperienceCard 
               experience={exp}
