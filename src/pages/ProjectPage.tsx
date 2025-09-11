@@ -23,7 +23,7 @@ export default function ProjectPage() {
   }
 
   const renderScreenshots = () => {
-    if (project.id === "firewall-config" || project.id === "mini-robot") {
+    if (project.id === "firewall-config" || project.id === "mini-robot" || project.id === "ChronoPlan") {
       return (
         <div className="space-y-16 mb-8">
           {project.screenshots.map((screenshot, index) => (
@@ -45,6 +45,7 @@ export default function ProjectPage() {
                 {screenshot.url.endsWith('.mp4') ? (
                   <video
                     controls
+                    preload="metadata"
                     className="rounded-lg w-full h-[500px] object-contain bg-[#FBF5DD]/5 cursor-pointer"
                     onClick={() => setSelectedImage(screenshot.url)}
                   >
