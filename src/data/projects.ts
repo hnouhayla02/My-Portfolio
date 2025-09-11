@@ -1,5 +1,5 @@
-import Academix from '../components/academix.png';
 import PetParadise from '../components/petparadise.png';  
+import Academix from '../components/academix.png';
 import cybersecurity from '../components/cybersecurity.png'; 
 import girl from '../components/girl.png';
 import strong_website from '../components/strong_website.png';
