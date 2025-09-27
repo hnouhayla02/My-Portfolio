@@ -1,4 +1,3 @@
-import PetParadise from '../components/petparadise.png';  
 import Academix from '../components/academix.png';
 import cybersecurity from '../components/cybersecurity.png'; 
 import girl from '../components/girl.png';
@@ -91,7 +90,7 @@ export interface Project {
       image: "https://www.servcorp.co.uk/media/34561/e-commerce-img.jpeg",
       screenshots: [
         { url: Academix, caption: " Basic online courses platform" },
-        { url: PetParadise, caption: "Pet shop online platform" },
+        { url: Academix, caption: "Pet shop online platform" },
         { url: "https://b8f4g5a7.delivery.rocketcdn.me/wp-content/uploads/2024/01/inspiro-pro-1024x637.png", caption: "WordPress" },
       ],
       technologies: ["React", "Vite", "Typescript", "Node.js", "WordPress", "Elementor", "Woocommerce"],
