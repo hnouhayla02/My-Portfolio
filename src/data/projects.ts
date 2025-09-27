@@ -1,4 +1,4 @@
-import PetParadise from '../components/PetParadise.png';  
+import PetParadise from '../components/petrparadise.png';  
 import Academix from '../components/academix.png';
 import cybersecurity from '../components/cybersecurity.png'; 
 import girl from '../components/girl.png';
@@ -19,7 +19,7 @@ import running_state from '../components/running_state.png';
 import robot_video from '../components/robot-video.mp4';
 import synchealth1 from '../components/android_app.png';
 import synchealth2 from '../components/synchealth_schema.png'
-import chronoPlan from '../components/chronoPlan.jpg';
+import chronoPlan from '../components/chronoplan.jpg';
 import chronoplan_video from '../components/chronoplan.mp4';
 
 // Define the Project interface
